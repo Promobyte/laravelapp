@@ -20,6 +20,7 @@
         <!-- Otherwise apply the normal LTR layouts -->
         {{ style(mix('css/frontend.css')) }}
 
+
         @stack('after-styles')
     </head>
     <body>
@@ -31,6 +32,7 @@
                 @include('includes.partials.messages')
                 @yield('content')
             </div><!-- container -->
+            @include('frontend.includes.footer')
         </div><!-- #app -->
 
         <!-- Scripts -->
